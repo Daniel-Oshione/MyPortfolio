@@ -264,6 +264,9 @@ padding: 0 auto;
         .contact a button{
             padding: 20px 200px;
         }
+        .projects a img{
+            filter:brightness(1);
+        }
     }
     @media (max-width: 992px){
         header img {
