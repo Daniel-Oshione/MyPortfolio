@@ -90,7 +90,8 @@ padding: 0 auto;
     }
     .contact a button{
         margin-top: 20px;
-        padding: 10px 230px;
+        margin-left: -170px;
+        padding: 10px 100px;
         background: none;
         font-size: 30px;
         color: white;
@@ -262,7 +263,7 @@ padding: 0 auto;
     }
     @media (max-width: 1065px){
         .contact a button{
-            padding: 20px 200px;
+            padding: 20px 100px;
         }
         .projects a img{
             filter:brightness(1);
@@ -273,6 +274,9 @@ padding: 0 auto;
             width: 100px;
             height: 100px;
         }
+        .contact a button{
+            padding: 15px 40px;
+          }
     }
     @media (max-width: 750px){
         /* navbar */
@@ -315,14 +319,24 @@ padding: 0 auto;
             transform: scale(0.7);
           }
           .contact a button{
-            padding: 15px 120px;
+            padding: 15px 90px;
+            position: relative;
+            left: 30px;
           }
     }    
+    @media(max-width:562px){
+        .contact a button{
+            padding: 15px 50px;
+           
+        }
+    }
     @media (max-width:295px) {
         .section_one img{
             height: 400px;
         }
         .contact a button{
-            padding: 15px 70px;
+            padding: 15px 20px;
+            position: relative;
+            left: 70px;
           }
     }    
