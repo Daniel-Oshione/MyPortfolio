@@ -98,6 +98,7 @@ padding: 0 auto;
         border-color:  rgb(4, 255, 255);
         border-radius: 9%;
         white-space: nowrap;
+        cursor: pointer;
     }
     .contact a button:hover{
         background-color:rgb(47, 149, 149);
@@ -204,7 +205,7 @@ padding: 0 auto;
         border-radius: 5%;
     }
     .projects a:nth-child(1):hover{
-        background-color: rgb(226, 192, 226);
+        background-color: rgb(255, 105, 255);
         color: rgb(65, 64, 64);
         transition: 300ms;
     }
@@ -225,6 +226,91 @@ padding: 0 auto;
         font-size: 20px;
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+    /* for eamil page */
+    .center_contact{
+        margin-top: 90px;
+        width: 100vw;
+        background-color:transparent;
+        border-radius: 5px;
+        padding: 30px 60px 30px 60px;
+    }
+    .center_contact h1{
+        margin-bottom: 30px;
+        text-decoration: underline;
+        color: #ffff;
+        text-align: center;
+        font-size: 50px;
+    }
+    .center_contact p {
+        text-align: left;
+        font-size: 25px;
+    }
+    .top-details{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .mid-details{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .details{
+        text-align: left;
+        margin-bottom: 20px;
+        color: #ffff;
+        font-weight: bolder;
+    }
+    .details input{
+        font-size: 20px;
+        text-align: left;
+        padding: 10px 8px;
+        border: none;
+        border-radius: 5px;
+        width: 450px;
+        font-weight: 900;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .message{
+    border-radius: 5px;
+    text-align: left;
+    padding: 5px 0 50px 5px;
+    width: 450px;
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    }
+    .center_contact button{ 
+    color:white;
+    border: solid 1px #ffff;
+    background-color: transparent;
+    padding: 10px 300px;
+    cursor: pointer;
+    }
+    .center_contact button:hover{
+        color: black;
+        background-color: white;
+    }
+    .collect-details{
+        padding: 30px 20px;
+        backdrop-filter: blur(4px);
+        border-radius: 30px;
+        box-shadow: 1px 1px 5px 1px #ffff, 1px 1px 10px 1px #ffff;
+    }
+    /* for unsupported broswers */
+    @supports not (backdrop-filter: blur(4px)){
+    .collect-details{
+        background-color: black;
+    }
+    }
+    .home-redirect p{
+        color: white;
+        margin-bottom: 30px;
+    }
+    .home-redirect{
+    text-decoration: none;
+    }
     /* FOOTER */
     footer{
         color: white;
@@ -242,6 +328,20 @@ padding: 0 auto;
     footer a img:hover{
         transform: scale(1);
         transition: 300ms;
+    }
+    footer a button i{
+        color: white;
+        font-size: 25px;
+        position: relative;
+        top: 5px;
+        margin: 0 5px;
+    }
+    footer a button{
+        color: white;
+        cursor: pointer;
+        padding: 5px 5px 10px 5px;
+        background-color: transparent;
+        border: none;
     }
     @media (max-width:1300px) {
         .projects a{
@@ -266,6 +366,15 @@ padding: 0 auto;
         .projects a img{
             filter:brightness(1);
         }
+        .collect-details{
+            padding: 30px 20px;
+            backdrop-filter: blur(0);
+        }
+    }
+    @media (max-width: 1059px){
+        .center_contact button{ 
+            padding: 10px 200px;
+            }
     }
     @media (max-width: 992px){
         header img {
@@ -298,6 +407,7 @@ padding: 0 auto;
           }
           .section_one{
             flex-direction: column;
+            margin-top: -30px;
           }
           .section_one img{
             width: 500px;
@@ -326,10 +436,51 @@ padding: 0 auto;
             position: relative;
             left: 30px;
           }
-    }    
+    } 
+    @media (max-width:612px){
+        .details input{
+            width: 300px;
+        }
+        .message{
+            width: 300px;
+        }
+        .center_contact button{ 
+            padding: 10px 130px;
+            }
+    }   
     @media(max-width:562px){
         .contact a button{
             padding: 15px 60px;   
+        }
+    }
+    @media (max-width:472px){
+        .details p{
+            transform: scale(0.8);
+        }
+        .details input{
+            transform: scale(0.8)
+        }
+        .message{
+            transform: scale(0.8);
+        }
+        .center_contact button{ 
+            transform: scale(0.8);
+            padding: 15px 120px;
+        }
+    }
+    @media (max-width:446px){
+        .details p{
+            transform: scale(0.7);
+        }
+        .details input{
+            transform: scale(0.7)
+        }
+        .message{
+            transform: scale(0.7);
+        }
+        .center_contact button{ 
+            transform: scale(0.6);
+            padding: 15px 120px;
         }
     }
     @media(max-width:461px){
