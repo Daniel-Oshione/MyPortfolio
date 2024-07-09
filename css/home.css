@@ -468,6 +468,12 @@ padding: 0 auto;
             padding: 15px 120px;
         }
     }
+    @media(max-width:461px){
+        .contact a button{
+            padding: 15px 40px;
+            left: 50px;
+        }
+    }
     @media (max-width:446px){
         .details p{
             transform: scale(0.7);
@@ -477,16 +483,73 @@ padding: 0 auto;
         }
         .message{
             transform: scale(0.7);
+            margin-top: -20px;
         }
         .center_contact button{ 
             transform: scale(0.6);
             padding: 15px 120px;
+            margin-bottom: -50px;
         }
     }
-    @media(max-width:461px){
-        .contact a button{
-            padding: 15px 40px;
-            left: 50px;
+    @media (max-width:430px){
+        .top-details{
+            margin-left: -30px;
+        }
+        .mid-details{
+            margin-left: -30px;
+        }
+        .center_contact button{
+            margin-left: -30px;
+        }
+    }
+    @media (max-width:385px){
+        .details p{
+            transform: scale(0.5);
+        }
+        .details input{
+            transform: scale(0.6)
+        }
+        .message{
+            transform: scale(0.6);
+        }
+        .center_contact button{ 
+            transform: scale(0.5);
+            padding: 15px 120px;
+            margin-left: -40px;
+        }
+        .top-details{
+            margin-left: -40px;
+        }
+        .mid-details{
+            margin-left: -40px;
+        }
+    }
+    @media (max-width:383px){
+        .center_contact h1{
+            font-size: 30px;
+        }
+    }
+    @media (max-width:361px){
+        .details p{
+            transform: scale(0.4);
+        }
+        .details input{
+            transform: scale(0.5)
+        }
+        .message{
+            transform: scale(0.5);
+            margin-top: -40px;
+        }
+        .center_contact button{ 
+            transform: scale(0.5);
+            padding: 15px 100px;
+            margin-left: -30px;
+        }
+        .top-details{
+            margin-left: -60px;
+        }
+        .mid-details{
+            margin-left: -60px;
         }
     }
     @media(max-width:346px){
