@@ -15,8 +15,8 @@ body {
 }
 /* navbar */
 header img {
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin-left: 20px;
@@ -28,10 +28,6 @@ header img {
 .nav img {
   transform: scale(0.5);
   margin-left: 10px;
-}
-.nav img:hover {
-  transform: scale(0.6);
-  transition: 100ms;
 }
 .navbar {
   width: 100%;
@@ -54,7 +50,7 @@ header img {
   display: none;
 }
 .nav {
-  margin-right: 70px;
+  /* margin-right: 70px; */
 }
 /* drop down menu */
 .drop_down {
@@ -78,18 +74,20 @@ header img {
 }
 .section_one {
   display: flex;
-  margin: 120px 0 100px 0;
   align-items: center;
   justify-content: space-around;
+  margin: 30px 0 60px 0;
 }
 .section_one h1 {
   text-align: left;
   color: white;
 }
+.contact{
+  justify-items: left;
+}
 /* get in touch button code */
 .contact a button {
   margin-top: 20px;
-  margin-left: -170px;
   font-size: 30px;
   text-decoration: none;
   border: 2px solid aqua;
@@ -113,10 +111,6 @@ header img {
 }
 .contact a button:hover {
   color: white;
-}
-.contact a button span {
-  position: relative;
-  z-index: 2;
 }
 
 .contact a button::before {
@@ -150,8 +144,10 @@ header img {
 /* get in touch button code ends here */
 .section_one img {
   width: 500px;
-  height: 500px;
+  height: 550px;
   object-fit: cover;
+border-radius: 0 0 50% 50%;
+  cursor: pointer;
 }
 .section_two {
   background-color: white;
@@ -449,15 +445,11 @@ footer a button {
   }
   .section_one {
     flex-direction: column;
-    margin-top: -30px;
+    margin-top: -40px;
   }
   .section_one img {
     width: 500px;
     height: 500px;
-  }
-  .section_one h1 {
-    margin-left: 30px;
-    transform: scale(0.8);
   }
   /* My skills */
   .skills_a {
@@ -472,11 +464,6 @@ footer a button {
   }
   .projects a {
     transform: scale(0.7);
-  }
-  .contact a button {
-    padding: 15px 90px;
-    position: relative;
-    left: 30px;
   }
 }
 @media (max-width: 612px) {
@@ -513,7 +500,6 @@ footer a button {
 @media (max-width: 461px) {
   .contact a button {
     padding: 15px 40px;
-    left: 50px;
   }
 }
 @media (max-width: 446px) {
@@ -540,9 +526,6 @@ footer a button {
   .mid-details {
     margin-left: -30px;
   }
-  .center_contact button {
-    margin-left: -30px;
-  }
 }
 @media (max-width: 385px) {
   .details p {
@@ -557,7 +540,6 @@ footer a button {
   .center_contact button {
     transform: scale(0.5);
     padding: 15px 120px;
-    margin-left: -40px;
   }
   .top-details {
     margin-left: -40px;
@@ -585,7 +567,6 @@ footer a button {
   .center_contact button {
     transform: scale(0.5);
     padding: 15px 100px;
-    margin-left: -30px;
   }
   .top-details {
     margin-left: -60px;
@@ -597,7 +578,6 @@ footer a button {
 @media (max-width: 346px) {
   .contact a button {
     padding: 15px 40px;
-    left: 70px;
   }
 }
 @media (max-width: 295px) {
@@ -606,7 +586,5 @@ footer a button {
   }
   .contact a button {
     padding: 15px 20px;
-    position: relative;
-    left: 70px;
   }
 }
