@@ -14,6 +14,9 @@ body {
   background-repeat: no-repeat;
 }
 /* navbar */
+.nav a{
+  text-decoration: none;
+}
 header img {
   width: 100px;
   height: 100px;
@@ -48,9 +51,6 @@ header img {
   border-style: none;
   margin-right: 20px;
   display: none;
-}
-.nav {
-  /* margin-right: 70px; */
 }
 /* drop down menu */
 .drop_down {
@@ -239,6 +239,7 @@ border-radius: 0 0 50% 50%;
 .projects a {
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: black;
   box-shadow: 0 2px 7px 2px black;
   padding: 10px 10px;
@@ -360,6 +361,7 @@ footer {
 }
 footer a {
   margin: 0 30px;
+  text-decoration: none;
 }
 footer a img {
   margin-top: 30px;
