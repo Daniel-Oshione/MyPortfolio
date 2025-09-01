@@ -14,7 +14,7 @@ body {
   background-repeat: no-repeat;
 }
 body, html{
-  min-width: 432px;
+  min-width: 360px;
 }
 /* navbar */
 .nav a{
@@ -39,7 +39,7 @@ header img {
   width: 100%;
   height: 20px;
   margin: 0 auto;
-  padding: 70px 0px;
+  padding: 70px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,11 +89,10 @@ header img {
   justify-items: left;
 }
 .center_contact {
-  margin: 0 auto;
-  /* width: 100vw; */
+  margin: 30px auto 0 auto;
+  max-width: 90%;
   background-color: transparent;
   border-radius: 5px;
-  padding: 30px 60px 30px 60px;
 }
 .center_contact h1 {
   margin-bottom: 30px;
@@ -108,12 +107,12 @@ header img {
 }
 .top-details {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .mid-details {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .details {
@@ -152,12 +151,14 @@ header img {
   color: white;
   border: solid 1px #ffff;
   background-color: transparent;
-  padding: 10px 300px;
+  padding: 10px 100px;
+  margin: 0 auto;
   cursor: pointer;
 }
 .center_contact button:hover {
   color: black;
   background-color: white;
+  font-weight: 700;
 }
 .collect-details {
   padding: 30px 20px;
@@ -173,7 +174,15 @@ header img {
 }
 .home-redirect p {
   color: white;
-  margin-bottom: 30px;
+  margin: 30px auto;
+  max-width: 100px;
+  padding: 10px;
+  border: 1px solid white;
+}
+.home-redirect p:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 .home-redirect {
   text-decoration: none;
@@ -202,6 +211,12 @@ header img {
     width: 300px;
   }
 }
+
+@media (max-width: 562px) {
+  .contact a button {
+    padding: 15px 60px;
+  }
+}
 @media (max-width: 472px) {
   .details p {
     transform: scale(0.8);
@@ -212,95 +227,30 @@ header img {
   .message {
     transform: scale(0.8);
   }
-  .center_contact button {
-    transform: scale(0.8);
-    padding: 15px 120px;
-  }
-}
-@media (max-width: 750px) {
-  /* navbar */
-  .nav a {
-    display: none;
-  }
-  .navbar_toggle {
-    display: block;
-    font-size: 35px;
-  }
-  .drop_down {
-    display: none;
-  }
-  .drop_down.visible {
-    display: block;
-  }
-  .section_one {
-    flex-direction: column;
-    margin-top: -40px;
-  }
-  .section_one img {
-    width: 500px;
-    height: 500px;
-  }
-  /* My skills */
-  .skills_a {
-    flex-direction: column;
-    margin-bottom: -20px;
-  }
-  .skills_b {
-    flex-direction: column;
-  }
-}
-@media (max-width: 612px) {
-  .center_contact button {
-    padding: 10px 130px;
-  }
-  .projects{
-    gap: 0;
-  }
-}
-@media (max-width: 562px) {
-  .contact a button {
-    padding: 15px 60px;
-  }
-}
-@media (max-width: 461px) {
-  .contact a button {
-    padding: 15px 40px;
-  }
-}
-@media (max-width: 446px) {
-  .details p {
-    transform: scale(0.7);
-  }
-  .details input {
-    transform: scale(0.7);
-  }
-  .message {
-    transform: scale(0.7);
-    margin-top: -20px;
-  }
-  .center_contact button {
-    transform: scale(0.6);
-    padding: 15px 120px;
-    margin-bottom: -50px;
-  }
-}
-@media (max-width: 385px) {
-  .details p {
-    transform: scale(0.5);
-  }
-  .details input {
-    transform: scale(0.6);
-  }
-  .message {
-    transform: scale(0.6);
-  }
-  .center_contact button {
-    transform: scale(0.5);
-    padding: 15px 120px;
-  }
 }
 @media (max-width: 383px) {
   .center_contact h1 {
     font-size: 30px;
   }
+  .details p{
+    font-size: 20px;
+  }
+}
+@media (max-width: 371px) {
+  .details p {
+    transform: scale(0.7);
+  }
+  .details input {
+    transform: scale(0.7);
+  }
+  .message {
+    transform: scale(0.7);
+    /* margin-top: -40px; */
+  }
+  /* .top-details {
+    margin-left: -60px;
+  }
+  .mid-details {
+    margin-left: -60px;
+  } */
 }
