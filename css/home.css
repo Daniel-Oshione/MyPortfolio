@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-align: center;
   overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
   height: 100vh;
@@ -86,11 +87,14 @@ header img {
   color: white;
 }
 .contact{
-  justify-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content:left;
+  align-items: flex-start;
 }
 /* get in touch button code */
 .contact a button {
-  margin-top: 20px;
+  margin: 20px 0;
   font-size: 30px;
   text-decoration: none;
   border: 2px solid aqua;
@@ -148,6 +152,15 @@ header img {
   height: 400px;
 }
 /* get in touch button code ends here */
+.CV{
+  text-decoration: none;
+  border: 2px solid aqua;
+    padding: 10px 30px;
+    border-radius: 7px;
+    background-color: aqua;
+    color: black;
+    font-weight: 600;
+}
 .section_one img {
   width: 500px;
   height: 550px;
