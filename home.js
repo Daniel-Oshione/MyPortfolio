@@ -2,7 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('toggle');
     const dropDown = document.querySelector('.drop_down');
     const head = document.getElementById('head');
-    const body = document.getElementById('body')
+    const body = document.getElementById('body');
+    const copy = document.getElementById('copywright');
+    const currentYear = new Date().getFullYear();
+
+
+    copy.textContent = `${currentYear}`;
 
     toggleButton.addEventListener("click", () => {
       const isVisible = dropDown.classList.toggle('visible');
@@ -18,5 +23,5 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleButton.textContent = `☰`;
       }
     });
-  });
+  }); 
 
