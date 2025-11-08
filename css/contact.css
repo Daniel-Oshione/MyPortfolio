@@ -57,8 +57,8 @@ header img {
 }
 /* drop down menu */
 .drop_down {
-  width: 100%;
-  height: 100%;
+  width: 100dvw;
+  height: 100dvh;
   display: none;
   overflow: hidden;
 }

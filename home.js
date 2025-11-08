@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentYear = new Date().getFullYear();
 
 
-    copy.textContent = `${currentYear}`;
+    if (copy) {
+        const currentYear = new Date().getFullYear();
+        copy.textContent = `${currentYear}`;
+    }
 
     toggleButton.addEventListener("click", () => {
       const isVisible = dropDown.classList.toggle('visible');

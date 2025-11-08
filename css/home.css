@@ -87,6 +87,7 @@ header img {
   color: white;
 }
 .contact{
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   justify-content:left;
@@ -214,7 +215,7 @@ header img {
   border: 1px solid purple;
 }
 .component_a:nth-child(4) {
-  border: 1px solid rgb(255, 251, 0);
+  border: 1px solid rgb(169, 166, 4);
 }
 .component_a:hover {
   box-shadow: 3px 5px 5px 1px rgb(110, 110, 110);
